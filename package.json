@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-server",
+  "version": "1.0.0",
+  "description": "A server for Prtfolios",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "netlify:start": "netlify-lambda serve functions",
+    "netlify:build": "netlify-lambda build functions",
+    "net:build": "netlify build",
+    "net:deploy": "netlify deploy --prod",
+    "net:both": "concurrently \"netlify deploy --prod\" \"netlify build\""
+  },
+  "author": "Kenny Ogbogu",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase": "^10.6.0",
+    "netlify-lambda": "^2.0.16",
+    "nodemailer": "^6.9.13",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
