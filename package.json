@@ -21,7 +21,7 @@
     "firebase": "^10.6.0",
     "netlify-cli": "^17.37.1",
     "netlify-lambda": "^2.0.16",
-    "nodemailer": "^6.9.13",
+    "nodemailer": "^6.9.16",
     "serverless-http": "^3.2.0"
   },
   "devDependencies": {
