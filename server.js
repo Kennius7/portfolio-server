@@ -55,8 +55,10 @@ app.post('/send-email', (req, res) => {
     const htmlEmail = `
         <html>
             <body>
-            <p>${formData.name} just registered for the upcoming ${formData.courses} Online Class.</p>
-            <p>His/Her Phone/WhatSapp number is: ${formData.number}</p>
+            <p>${formData.firstName} ${formData.lastName} just sent you a message with the following data:</p>
+            <p>Subject: ${formData.subject}</p>
+            <p>Message Body: ${formData.message}</p>
+            <p>His/Her Phone/WhatSapp number is: ${formData.phone}</p>
             <p>His/Her Email address is: ${formData.email}</p>
             </body>
         </html>
