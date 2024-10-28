@@ -12,7 +12,7 @@ app.use(express.json());
 
 
 router.get('/', (req, res) => {
-    res.status(200).json({ success: true, message: 'Hello, World!' });
+    res.status(200).json({ success: true, message: 'Hello, World! My name is Kenny' });
 });
 
 
