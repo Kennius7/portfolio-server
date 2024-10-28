@@ -51,7 +51,7 @@ const transporter = nodemailer.createTransport({
 app.post('/send-email', (req, res) => {
     const formData = req.body;
     console.log(formData);
-    const subject = "Shosan Code Hub Class Registrations";
+    const subject = "Explore Stephen Feedback Emails";
     const htmlEmail = `
         <html>
             <body>
@@ -65,8 +65,8 @@ app.post('/send-email', (req, res) => {
     `;
 
     const mailOptions = {
-        from: 'shosanacodemia@gmail.com',
-        to: 'shosanacodemia@gmail.com',
+        from: formData.email,
+        to: ['shosanacodemia@gmail.com', 'stephenojeogwu01@gmail.com'],
         subject: subject,
         html: htmlEmail,
     }
