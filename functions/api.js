@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import serverless from 'serverless-http';
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
 
 const app = express();
