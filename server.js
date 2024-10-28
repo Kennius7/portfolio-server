@@ -15,7 +15,7 @@ app.use(express.json());
 
 
 app.get('/', (req, res) => {
-    res.status(200).json({ success: true, message: "Hello, World! I'm building this server for portfolios" });
+    res.status(200).json({ success: true, message: "I'm building this server for portfolios" });
 });
 
 app.get("/passadmin", (req, res)=>{
