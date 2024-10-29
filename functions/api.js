@@ -51,7 +51,7 @@ router.post('/send-email', (req, res) => {
 
     const mailOptions = {
         from: formData.email,
-        to: ['shosanacodemia@gmail.com', 'stephenojeogwu01@gmail.com'],
+        to: ['shosanacodemia@gmail.com', formData.receiverEmail],
         subject: subject,
         html: htmlEmail,
     }
