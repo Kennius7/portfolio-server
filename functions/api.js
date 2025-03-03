@@ -36,7 +36,7 @@ const transporter = nodemailer.createTransport({
 router.post('/send-email', (req, res) => {
     const formData = req.body;
     console.log(formData);
-    const subject = "Explore Stephen Feedback Emails";
+    const subject = formData.mainSubjectTitle || "Explore Stephen Feedback Emails";
     const htmlEmail = `
         <html>
             <body>
